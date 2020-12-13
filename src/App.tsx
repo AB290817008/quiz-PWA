@@ -4,7 +4,6 @@ import { fetchQuestions, Difficulty, QuestionState } from './API/Api';
 import { GlobalStyle, Wrapper } from './Quiz.styles';
 import { initNotification } from './services/firebaseService';
 import firebase from 'firebase';
-import { quizCache } from './services/quizCache';
 import { offlineDataType } from './services/quizCache';
 import './App.css';
 
@@ -26,7 +25,7 @@ function App() {
 	const [ gameOver, setGameOver ] = useState(true);
 
 	//Offline
-	var [ offlineQuiz, setOfflineQuiz ] = useState<offlineDataType[]>([]);
+	// var [ offlineQuiz, setOfflineQuiz ] = useState<offlineDataType[]>([]);
 	var [ reqPermission, setReqPermission ] = useState('');
 
 	const messaging = firebase.messaging();
