@@ -4,7 +4,7 @@ import { fetchQuestions, Difficulty, QuestionState } from './API/Api';
 import { GlobalStyle, Wrapper } from './Quiz.styles';
 import { initNotification } from './services/firebaseService';
 import firebase from 'firebase';
-import { offlineDataType } from './services/quizCache';
+// import { offlineDataType } from './services/quizCache';
 import './App.css';
 
 const TOTAL_QUESTIONS = 10;
